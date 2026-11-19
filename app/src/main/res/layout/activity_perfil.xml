@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cine_bg"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conte sobre você"
+            android:textColor="@color/cine_primary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Passo 1 de 2"
+            android:textColor="@color/cine_muted" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Seu nome"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="50" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Como você está se sentindo?"
+            android:textColor="@color/cine_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgHumor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbFeliz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feliz" />
+
+            <RadioButton
+                android:id="@+id/rbTriste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Triste" />
+
+            <RadioButton
+                android:id="@+id/rbEstressado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estressado" />
+
+            <RadioButton
+                android:id="@+id/rbEntediado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entediado" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swClassicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="Aceito filmes clássicos (antes de 2000)" />
+
+        <Button
+            android:id="@+id/btnProximo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/cine_primary"
+            android:text="Próximo"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

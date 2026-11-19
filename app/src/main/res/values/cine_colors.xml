@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cine_primary">#1A237E</color>
+    <color name="cine_accent">#FFC107</color>
+    <color name="cine_bg">#F5F5F7</color>
+    <color name="cine_text">#212121</color>
+    <color name="cine_muted">#616161</color>
+</resources>
